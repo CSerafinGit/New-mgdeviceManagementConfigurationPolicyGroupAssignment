@@ -1,0 +1,2 @@
+# New-mgdeviceManagementConfigurationPolicyGroupAssignment
+New-mgdeviceManagementConfigurationPolicyGroupAssignment
