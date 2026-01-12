@@ -1,0 +1,23 @@
+# PowerShell specific
+*.ps1xml
+*.log
+
+# Build artifacts
+bin/
+obj/
+*.nupkg
+
+# IDE
+.vscode/
+.vs/
+*.swp
+*.bak
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test results
+TestResults/
+*.trx
