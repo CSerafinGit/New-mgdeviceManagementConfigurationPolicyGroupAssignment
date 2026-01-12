@@ -34,7 +34,7 @@ This function simplifies the process of assigning Intune configuration policies 
 
 1. Install the Microsoft Graph PowerShell SDK: 
 ```powershell
-Install-Module Microsoft. Graph -Scope CurrentUser
+Install-Module Microsoft.Graph.DeviceManagement -Scope CurrentUser
 ```
 
 2. Connect to Microsoft Graph with required permissions:
