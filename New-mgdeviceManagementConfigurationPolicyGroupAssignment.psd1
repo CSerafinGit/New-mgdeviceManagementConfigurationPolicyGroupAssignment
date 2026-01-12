@@ -9,7 +9,7 @@
     CompatiblePSEditions = @('Desktop', 'Core')
 
     # ID used to uniquely identify this module
-    GUID = 'a1b2c3d4-e5f6-4a5b-8c9d-0e1f2a3b4c5d'
+    GUID = 'efa64ea2-174b-406f-8ca8-e4d41fcc5afa'
 
     # Author of this module
     Author = 'CSerafinGit'

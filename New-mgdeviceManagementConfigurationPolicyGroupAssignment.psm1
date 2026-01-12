@@ -6,6 +6,9 @@ function New-mgdeviceManagementConfigurationPolicyGroupAssignment {
     .DESCRIPTION
         This function creates a new group assignment for a device management configuration policy in Microsoft Graph.
         It assigns a configuration policy to a specific Azure AD group.
+        
+        NOTE: This is a template/helper function that prepares the assignment data structure.
+        To perform actual API operations, integrate this with Microsoft Graph PowerShell SDK or REST API calls.
 
     .PARAMETER PolicyId
         The ID of the device management configuration policy.
@@ -85,19 +88,19 @@ function New-mgdeviceManagementConfigurationPolicyGroupAssignment {
                     }
                 }
 
-                # Convert to JSON
-                $jsonBody = $assignmentBody | ConvertTo-Json -Depth 10
+                Write-Verbose "Assignment body: $($assignmentBody | ConvertTo-Json -Depth 10)"
 
-                Write-Verbose "Assignment body: $jsonBody"
-
-                # In a real implementation, this would call the Microsoft Graph API
-                # For now, return the assignment object that would be sent
+                # This function prepares the assignment data structure.
+                # To implement actual Microsoft Graph API calls, you can use:
+                # - Invoke-MgGraphRequest for REST API calls
+                # - New-MgDeviceManagementConfigurationPolicyAssignment if available in the SDK
+                
                 $result = [PSCustomObject]@{
                     PolicyId = $PolicyId
                     GroupId = $GroupId
                     Target = $Target
                     AssignmentBody = $assignmentBody
-                    Status = "Ready to submit to Microsoft Graph API"
+                    Status = "Assignment structure prepared (template - integrate with MS Graph SDK for actual API operations)"
                     Timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
                 }
 
